@@ -60,7 +60,7 @@ class NewToursTest(unittest.TestCase):
         self.driver.find_element(By.NAME, "password").send_keys("password123")
         self.driver.find_element(By.NAME, "confirmPassword").send_keys("password321")
         self.driver.find_element(By.NAME, "submit").click()
-        self.assertTrue("PAssword and con" not in self.driver.page_source)
+        self.assertTrue("PAssword and con"  in self.driver.page_source)
     
     def test_registration_required_fields(self):
         self.driver.find_element(By.LINK_TEXT, "REGISTER").click()

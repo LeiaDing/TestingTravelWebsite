@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NewToursTest-20241004181507" tests="15" file=".py" time="80.644" timestamp="2024-10-04T18:17:16" failures="2" errors="0" skipped="0">
+	<testcase classname="NewToursTest" name="test_failed_login" time="4.849" timestamp="2024-10-04T18:15:17" file="testingNewTour.py" line="80"/>
+	<testcase classname="NewToursTest" name="test_flight_page_load" time="4.601" timestamp="2024-10-04T18:15:26" file="testingNewTour.py" line="98"/>
+	<testcase classname="NewToursTest" name="test_flight_search" time="5.148" timestamp="2024-10-04T18:15:35" file="testingNewTour.py" line="108"/>
+	<testcase classname="NewToursTest" name="test_flight_search_form_fields" time="4.646" timestamp="2024-10-04T18:15:44" file="testingNewTour.py" line="102"/>
+	<testcase classname="NewToursTest" name="test_flight_search_no_selection" time="9.050" timestamp="2024-10-04T18:15:57" file="testingNewTour.py" line="134"/>
+	<testcase classname="NewToursTest" name="test_login_page_load" time="4.481" timestamp="2024-10-04T18:16:06" file="testingNewTour.py" line="71"/>
+	<testcase classname="NewToursTest" name="test_logout" time="5.569" timestamp="2024-10-04T18:16:15" file="testingNewTour.py" line="90"/>
+	<testcase classname="NewToursTest" name="test_one_way_flight_search" time="5.232" timestamp="2024-10-04T18:16:25" file="testingNewTour.py" line="122"/>
+	<testcase classname="NewToursTest" name="test_registration_form_fields" time="4.934" timestamp="2024-10-04T18:16:34" file="testingNewTour.py" line="25"/>
+	<testcase classname="NewToursTest" name="test_registration_page_load" time="4.800" timestamp="2024-10-04T18:16:42" file="testingNewTour.py" line="21"/>
+	<testcase classname="NewToursTest" name="test_registration_password_mismatch" time="5.842" timestamp="2024-10-04T18:16:52" file="testingNewTour.py" line="48"/>
+	<testcase classname="NewToursTest" name="test_successful_login" time="5.058" timestamp="2024-10-04T18:17:07" file="testingNewTour.py" line="74"/>
+	<testcase classname="NewToursTest" name="test_successful_registration" time="5.657" timestamp="2024-10-04T18:17:16" file="testingNewTour.py" line="31"/>
+	<testcase classname="NewToursTest" name="test_empty_login" time="5.812" timestamp="2024-10-04T18:15:12" file="testingNewTour.py" line="86">
+		<failure type="AssertionError" message="False is not true"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Leia\Desktop\TestingProject\testingNewTour.py", line 88, in test_empty_login
+    self.assertTrue("Enter your userName and password correct" in self.driver.page_source)
+AssertionError: False is not true
+]]></failure>
+	</testcase>
+	<testcase classname="NewToursTest" name="test_registration_required_fields" time="4.965" timestamp="2024-10-04T18:17:01" file="testingNewTour.py" line="65">
+		<failure type="AssertionError" message="False is not true"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Leia\Desktop\TestingProject\testingNewTour.py", line 68, in test_registration_required_fields
+    self.assertTrue("Thank you for registering" not in self.driver.page_source)
+AssertionError: False is not true
+]]></failure>
+	</testcase>
+</testsuite>
